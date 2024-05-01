@@ -1,88 +1,100 @@
 @font-face {
   font-family: netflix-sans-regular;
-  src: url(NetflixSans_Rg.ttf);
+  src: url('NetflixSans_Rg.ttf');
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
 .root {
-    background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url("C:/Users/harya/.vscode/netflix-clone/bfiimage.png");
-    background-size: cover;
-    background-position: center ;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("bfiimage.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2vw;
+  height: 10vh;
+}
 
-  }
-  
-  img {
-    width: 14%;
-  }
-  
-  .sign-in {
-    border-radius: 8px;
-    background-color: #e50914;
-    color: white;
-    padding: 8px 16px;
-    cursor: pointer;
-    border: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .navbar {
-    padding-top: 1;
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    flex: 1;
-    align-items: center;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-   .body{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 900px;
-    font-size: 1em;
-    font-family: netflix-sans-regular;
-    line-height: 0.3;
-    font-size: 24px;
-    
-  }  
-  body{
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-  }
-  .bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 35%;
-    height: 5px
-    background-color: #ffffff;  
-  }
-  .email{
-    border: 0.01em solid white;
-    padding: 20px 10px;
-    font-size: 23px;
-    height: fit-content;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 8px;
-    background: transparent;
-    color: #ffffff;
-    border-radius: 2px;
-  }
-  .get{
-    background-color: #e50914;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 18px 32px; 
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
-    border: none;
-    margin:0;
-  }
-  .get:hover {
-    background-color: red;
-  }
+.logo {
+  width: 14%;
+}
+
+.sign-in {
+  border-radius: 10px;
+  background-color: #e50914;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: white;
+  text-align: center;
+}
+
+.body h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.body h2 {
+  font-size: 1.75em;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.body p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+.email {
+  border: 0.1em solid white;
+  padding: 14px;
+  font-size: 1.2em;
+  color: #000;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.get-started {
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-size: 1.2em;
+  border: none;
+  margin-left: 12px;
+}
+
+.get-started:hover {
+  background-color: red;
+}
